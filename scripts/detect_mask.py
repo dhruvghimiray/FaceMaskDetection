@@ -9,7 +9,7 @@ def detect_mask(frame, model):
     return "No Mask" if pred[0] > pred[1] else "Mask"
 
 if __name__ == "__main__":
-    model = load_model("./models/mask_detector.h5")
+    model = load_model("./models/model(new_dataset).h5")
     cap = cv2.VideoCapture(0)
     while True:
         ret, frame = cap.read()
