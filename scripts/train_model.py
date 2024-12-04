@@ -21,7 +21,7 @@ if __name__ == "__main__":
     data_dir = "dataset"
     X, y = load_data(data_dir)
     model = build_model()
-    model.fit(X, y, batch_size=32, epochs=2, validation_split=0.2)
+    model.fit(X, y, batch_size=32, epochs=10, validation_split=0.2)
     # model_dir = "./models"
     # os.makedirs(model_dir, exist_ok=True)
     model.save("models/mask_detector.h5")
